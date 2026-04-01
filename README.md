@@ -25,7 +25,7 @@ Currently transitioning into **marine automation, IIoT, and embedded systems** e
 ### Education
 
 **Operation of Ship Power Plants** (4 years)
-Specialist degree in marine power plant operation, maintenance, and diagnostics.
+Marine power plant operation, maintenance, and diagnostics.
 Core curriculum: thermodynamics, marine diesel engines, steam turbines, auxiliary machinery, ship electrical systems, automation and control systems.
 
 ---
