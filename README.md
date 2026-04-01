@@ -91,40 +91,26 @@ Dry-dock Operations   ████████░░  Inspection, Repair, Report
 
 ### Ecosystem
 
-These projects form an integrated stack — from fundamental algorithms to deployable autonomous systems:
+```mermaid
+graph TD
+    A["AEGIS-MONITOR<br/><i>Operator Dashboard</i><br/>Live telemetry · 3D model · Alarms"] --> B
+    B["ARGOS<br/><i>Inspection Robot</i><br/>Vision · Navigation · Edge AI"] --> C
+    B --> D
+    B --> E
+    C["SYNIZ<br/><i>TRIZ Engine</i><br/>50 agents solve<br/>the unknown"]
+    D["TRITON-ML<br/><i>Predictive Maintenance</i><br/>Fault detection + RUL"]
+    E["POSEIDON-DIAG<br/><i>Ship Interface</i><br/>J1939 · NMEA · CAN"]
+    D --> F["NautilusQuant<br/><i>Edge Compression</i><br/>3-bit · 512-byte LUT"]
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    AEGIS-MONITOR                            │
-│              Operator Dashboard (React)                      │
-│         Live telemetry · 3D ship model · Alarms             │
-└────────────────────────┬────────────────────────────────────┘
-                         │
-          ┌──────────────┴──────────────┐
-          │            ARGOS            │
-          │    Inspection Robot Core    │
-          │   Vision · Navigation · AI  │
-          └──┬───────┬───────┬──────┬──┘
-             │       │       │      │
-    ┌────────┴──┐ ┌──┴────┐ ┌┴─────┴────────┐
-    │   SYNIZ   │ │TRITON │ │ POSEIDON-DIAG  │
-    │           │ │  -ML  │ │                │
-    │ 50 TRIZ   │ │       │ │ J1939 · NMEA   │
-    │ agents    │ │ Fault │ │ CAN bus bridge │
-    │ solve the │ │ detect│ │ to ship systems│
-    │ unknown   │ │ + RUL │ │                │
-    └───────────┘ └───┬───┘ └────────────────┘
-                      │
-              ┌───────┴───────┐
-              │ NautilusQuant │
-              │               │
-              │  3-bit edge   │
-              │  compression  │
-              │  512-byte LUT │
-              └───────────────┘
+    style A fill:#0d4a6b,stroke:#1e88a8,color:#e2e8f0
+    style B fill:#6b2d0d,stroke:#a8571e,color:#e2e8f0
+    style C fill:#2d6b0d,stroke:#4a8a1e,color:#e2e8f0
+    style D fill:#4a0d6b,stroke:#7a1ea8,color:#e2e8f0
+    style E fill:#0d4a6b,stroke:#1e88a8,color:#e2e8f0
+    style F fill:#6b5a0d,stroke:#a8901e,color:#e2e8f0
 ```
 
-Each layer solves a distinct problem. Together, they enable autonomous maritime inspection where the robot sees, the ML classifies, TRIZ reasons about the unknown, and the human makes the final call.
+The robot sees. The ML classifies. TRIZ reasons about the unknown. The human makes the final call.
 
 **[Read the full engineering vision: from fundamental physics to autonomous systems →](VISION.md)**
 
