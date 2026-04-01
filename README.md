@@ -28,6 +28,12 @@ Currently transitioning into **marine automation, IIoT, and embedded systems** e
 Marine power plant operation, maintenance, and diagnostics.
 Core curriculum: thermodynamics, marine diesel engines, steam turbines, auxiliary machinery, ship electrical systems, automation and control systems.
 
+**STCW International Certifications**
+- ISPS Code — International Ship and Port Facility Security
+- Basic Safety Training (BST) — fire prevention & firefighting, personal survival techniques, personal safety & social responsibilities
+- Proficiency in Medical First Aid
+- Security Awareness Training
+
 ---
 
 ### Domain Knowledge
