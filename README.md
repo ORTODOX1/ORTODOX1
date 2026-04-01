@@ -72,11 +72,12 @@ Dry-dock Operations   ████████░░  Inspection, Repair, Report
 
 | Project | Description | Stack |
 |---------|-------------|-------|
-| [**POSEIDON-DIAG**](https://github.com/ORTODOX1/POSEIDON-DIAG) | Marine engine diagnostics platform — J1939-76, NMEA 2000, live monitoring | Rust, Tauri, React, CAN |
-| [**AEGIS-MONITOR**](https://github.com/ORTODOX1/AEGIS-MONITOR) | Ship systems monitoring dashboard — real-time sensor visualization | React, TypeScript, Three.js, WebSocket |
-| [**TRITON-ML**](https://github.com/ORTODOX1/TRITON-ML) | Predictive maintenance ML pipeline for ship machinery | Python, XGBoost, DNN, SHAP |
+| [**POSEIDON-DIAG**](https://github.com/ORTODOX1/POSEIDON-DIAG) | Marine engine diagnostics — J1939-76, NMEA 2000, AI anomaly detection | Rust, Tauri, React, CAN |
+| [**SYNIZ**](https://github.com/ORTODOX1/SYNIZ) | TRIZ-Swarm: 50 AI agents solve engineering contradictions via structured debates | Python, FastAPI, Neo4j, D3.js |
+| [**AEGIS-MONITOR**](https://github.com/ORTODOX1/AEGIS-MONITOR) | Ship systems monitoring dashboard — real-time visualization, 3D model | React, TypeScript, Three.js |
+| [**TRITON-ML**](https://github.com/ORTODOX1/TRITON-ML) | Predictive maintenance ML pipeline for ship machinery | Python, XGBoost, PyTorch, SHAP |
 | [**NautilusQuant**](https://github.com/ORTODOX1/NautilusQuant) | Deterministic KV-cache quantization via golden ratio geometry | Python, PyTorch, Triton GPU |
-| [**DAEDALUS**](https://github.com/ORTODOX1/DAEDALUS) | AI-assisted ECU reverse engineering platform | Rust, Tauri, React, Three.js |
+| [**DAEDALUS**](https://github.com/ORTODOX1/DAEDALUS) | AI-assisted ECU diagnostic platform for commercial vehicles | Rust, Tauri, React, Three.js |
 
 ---
 
