@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="200" viewBox="0 0 900 200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a192f"/>
+      <stop offset="100%" style="stop-color:#112240"/>
+    </linearGradient>
+    <linearGradient id="wave1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#0a192f;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#64ffda"/>
+      <stop offset="100%" style="stop-color:#58a6ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="200" fill="url(#bg)" rx="8"/>
+
+  <!-- Subtle wave layers -->
+  <path d="M0,160 Q150,140 300,155 Q450,170 600,150 Q750,130 900,145 L900,200 L0,200 Z"
+        fill="url(#wave1)"/>
+  <path d="M0,170 Q120,155 250,165 Q400,180 550,160 Q700,140 900,158 L900,200 L0,200 Z"
+        fill="#1e3a5f" opacity="0.2"/>
+  <path d="M0,182 Q200,170 400,178 Q600,188 900,175 L900,200 L0,200 Z"
+        fill="#64ffda" opacity="0.07"/>
+
+  <!-- Compass rose (subtle, top right) -->
+  <g transform="translate(820, 45) scale(0.5)" opacity="0.12">
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#64ffda" stroke-width="1"/>
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#64ffda" stroke-width="0.5"/>
+    <line x1="0" y1="-42" x2="0" y2="42" stroke="#64ffda" stroke-width="0.8"/>
+    <line x1="-42" y1="0" x2="42" y2="0" stroke="#64ffda" stroke-width="0.8"/>
+    <line x1="-30" y1="-30" x2="30" y2="30" stroke="#64ffda" stroke-width="0.4"/>
+    <line x1="30" y1="-30" x2="-30" y2="30" stroke="#64ffda" stroke-width="0.4"/>
+    <polygon points="0,-35 4,-8 -4,-8" fill="#64ffda" opacity="0.5"/>
+    <text x="0" y="-46" text-anchor="middle" fill="#64ffda" font-size="10" font-family="monospace">N</text>
+  </g>
+
+  <!-- Accent line -->
+  <rect x="50" y="130" width="80" height="2" rx="1" fill="url(#accent)"/>
+
+  <!-- Text -->
+  <text x="50" y="70" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+        font-size="16" fill="#8892b0" letter-spacing="3">
+    MARINE ENGINEER
+  </text>
+
+  <text x="50" y="112" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+        font-size="42" font-weight="700" fill="#ccd6f6">
+    Herman Doronin
+  </text>
+
+  <text x="50" y="160" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+        font-size="15" fill="#64ffda" letter-spacing="1">
+    Ship Systems  ·  Automation  ·  Edge AI
+  </text>
+
+  <!-- Subtle grid dots (navigation chart feel) -->
+  <g opacity="0.04" fill="#64ffda">
+    <circle cx="100" cy="30" r="1"/>
+    <circle cx="150" cy="30" r="1"/>
+    <circle cx="200" cy="30" r="1"/>
+    <circle cx="250" cy="30" r="1"/>
+    <circle cx="300" cy="30" r="1"/>
+    <circle cx="350" cy="30" r="1"/>
+    <circle cx="400" cy="30" r="1"/>
+    <circle cx="450" cy="30" r="1"/>
+    <circle cx="500" cy="30" r="1"/>
+    <circle cx="550" cy="30" r="1"/>
+    <circle cx="600" cy="30" r="1"/>
+    <circle cx="650" cy="30" r="1"/>
+    <circle cx="700" cy="30" r="1"/>
+    <circle cx="750" cy="30" r="1"/>
+    <circle cx="100" cy="180" r="1"/>
+    <circle cx="150" cy="180" r="1"/>
+    <circle cx="200" cy="180" r="1"/>
+    <circle cx="250" cy="180" r="1"/>
+    <circle cx="300" cy="180" r="1"/>
+    <circle cx="350" cy="180" r="1"/>
+    <circle cx="400" cy="180" r="1"/>
+    <circle cx="450" cy="180" r="1"/>
+    <circle cx="500" cy="180" r="1"/>
+    <circle cx="550" cy="180" r="1"/>
+    <circle cx="600" cy="180" r="1"/>
+    <circle cx="650" cy="180" r="1"/>
+    <circle cx="700" cy="180" r="1"/>
+    <circle cx="750" cy="180" r="1"/>
+  </g>
+</svg>

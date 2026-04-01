@@ -1,11 +1,5 @@
-<h1 align="center">
-  <br>
-  <img src="https://img.shields.io/badge/Marine_Engineer-Automation_&_Embedded_Systems-0d1b2a?style=for-the-badge&labelColor=1b263b" alt="Title">
-</h1>
-
 <p align="center">
-  <strong>Herman Doronin</strong><br>
-  <em>Bridging ship machinery and digital systems</em>
+  <img src="header.svg" alt="Herman Doronin — Marine Engineer" width="100%"/>
 </p>
 
 <p align="center">
