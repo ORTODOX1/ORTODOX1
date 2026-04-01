@@ -26,6 +26,13 @@ Marine machinery technician with **3+ years** of hands-on experience in ship pow
 
 Currently transitioning into **marine automation, IIoT, and embedded systems** engineering.
 
+### Education
+
+**Operation of Ship Power Plants** (4 years)
+Specialist degree in marine power plant operation, maintenance, and diagnostics.
+Core curriculum: thermodynamics, marine diesel engines, steam turbines, auxiliary machinery, ship electrical systems, automation and control systems.
+Moscow State University of Transport (RUT MIIT) | 2017 — 2021
+
 ---
 
 ### Domain Knowledge
@@ -75,15 +82,6 @@ Dry-dock Operations   ████████░░  Inspection, Repair, Report
 | [**TRITON-ML**](https://github.com/ORTODOX1/TRITON-ML) | Predictive maintenance ML pipeline for ship machinery | Python, XGBoost, DNN, SHAP |
 | [**NautilusQuant**](https://github.com/ORTODOX1/NautilusQuant) | Deterministic KV-cache quantization via golden ratio geometry | Python, PyTorch, Triton GPU |
 | [**DAEDALUS**](https://github.com/ORTODOX1/DAEDALUS) | AI-assisted ECU reverse engineering platform | Rust, Tauri, React, Three.js |
-
----
-
-### Education
-
-**Operation of Ship Power Plants** (4 years)
-Specialist degree in marine power plant operation, maintenance, and diagnostics.
-Core curriculum: thermodynamics, marine diesel engines, steam turbines, auxiliary machinery, ship electrical systems, automation and control systems.
-Moscow State University of Transport (RUT MIIT) | 2017 — 2021
 
 ---
 
