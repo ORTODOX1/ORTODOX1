@@ -87,18 +87,42 @@ Dry-dock Operations   ████████░░  Inspection, Repair, Report
 
 ### Ecosystem
 
+These projects form an integrated stack — from fundamental algorithms to deployable autonomous systems:
+
 ```
-                AEGIS-MONITOR (operator dashboard)
+┌─────────────────────────────────────────────────────────────┐
+│                    AEGIS-MONITOR                            │
+│              Operator Dashboard (React)                      │
+│         Live telemetry · 3D ship model · Alarms             │
+└────────────────────────┬────────────────────────────────────┘
                          │
-    SYNIZ ◄──── ARGOS ──►  POSEIDON-DIAG
-   (TRIZ)    (inspection   (ship sensors)
-              robot)
-               │    │
-         TRITON-ML  NautilusQuant
-        (ML models)  (edge compression)
+          ┌──────────────┴──────────────┐
+          │            ARGOS            │
+          │    Inspection Robot Core    │
+          │   Vision · Navigation · AI  │
+          └──┬───────┬───────┬──────┬──┘
+             │       │       │      │
+    ┌────────┴──┐ ┌──┴────┐ ┌┴─────┴────────┐
+    │   SYNIZ   │ │TRITON │ │ POSEIDON-DIAG  │
+    │           │ │  -ML  │ │                │
+    │ 50 TRIZ   │ │       │ │ J1939 · NMEA   │
+    │ agents    │ │ Fault │ │ CAN bus bridge │
+    │ solve the │ │ detect│ │ to ship systems│
+    │ unknown   │ │ + RUL │ │                │
+    └───────────┘ └───┬───┘ └────────────────┘
+                      │
+              ┌───────┴───────┐
+              │ NautilusQuant │
+              │               │
+              │  3-bit edge   │
+              │  compression  │
+              │  512-byte LUT │
+              └───────────────┘
 ```
 
-All projects integrate into a unified maritime inspection and monitoring platform.
+Each layer solves a distinct problem. Together, they enable autonomous maritime inspection where the robot sees, the ML classifies, TRIZ reasons about the unknown, and the human makes the final call.
+
+**[Read the full engineering vision: from fundamental physics to autonomous systems →](VISION.md)**
 
 ---
 
