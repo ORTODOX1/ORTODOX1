@@ -18,7 +18,7 @@
 
 ### About
 
-Marine machinery technician with **3+ years** of hands-on experience in ship power plant maintenance, diesel engine overhaul, and propulsion system diagnostics. I build software tools that connect physical machinery to digital monitoring — combining deep domain knowledge of marine engineering with modern programming (Rust, Python, TypeScript).
+Marine engineer with **3+ years** of hands-on experience in ship power plant maintenance, diesel engine overhaul, and propulsion system diagnostics. I build software tools that connect physical machinery to digital monitoring — combining deep domain knowledge of marine engineering with modern programming (Rust, Python, TypeScript).
 
 Currently transitioning into **marine automation, IIoT, and embedded systems** engineering.
 
