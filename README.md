@@ -94,17 +94,6 @@ Moscow State University of Transport (RUT MIIT) | 2017 — 2021
 
 ---
 
-### Languages
-
-| Language | Level |
-|----------|-------|
-| English | B2 |
-| German | B1 |
-| Ukrainian | Native |
-| Russian | Native |
-
----
-
 <p align="center">
   <em>"I know how a ship sounds when something is wrong.<br>Now I write the algorithms that detect it."</em>
 </p>
