@@ -76,14 +76,14 @@ Dry-dock Operations   ████████░░  Inspection, Repair, Report
 
 ### Projects
 
-| Project | Description | Stack |
-|---------|-------------|-------|
-| [**ARGOS**](https://github.com/ORTODOX1/ARGOS) | Autonomous ship inspection robot — edge AI + TRIZ problem-solving | Rust, Python, ROS 2, ONNX |
-| [**POSEIDON-DIAG**](https://github.com/ORTODOX1/POSEIDON-DIAG) | Marine engine diagnostics — J1939-76, NMEA 2000, AI anomaly detection | Rust, Tauri, React, CAN |
-| [**SYNIZ**](https://github.com/ORTODOX1/SYNIZ) | TRIZ-Swarm: 50 AI agents solve engineering contradictions via debates | Python, FastAPI, Neo4j, D3.js |
-| [**TRITON-ML**](https://github.com/ORTODOX1/TRITON-ML) | Predictive maintenance ML pipeline for ship machinery | Python, XGBoost, PyTorch, SHAP |
-| [**AEGIS-MONITOR**](https://github.com/ORTODOX1/AEGIS-MONITOR) | Ship systems monitoring dashboard — real-time visualization | React, TypeScript, Three.js |
-| [**NautilusQuant**](https://github.com/ORTODOX1/NautilusQuant) | Deterministic signal compression via golden ratio geometry | Python, PyTorch, Triton GPU |
+| Project | Problem It Solves | Stack |
+|---------|-------------------|-------|
+| [**ARGOS**](https://github.com/ORTODOX1/ARGOS) | Hull and tank inspections cost $50-100K and put humans at risk. ARGOS automates inspection in confined spaces with edge AI and TRIZ reasoning | Python, Rust, ROS 2, ONNX |
+| [**POSEIDON-DIAG**](https://github.com/ORTODOX1/POSEIDON-DIAG) | Unplanned engine failure costs $50K-500K/day. Real-time CAN bus diagnostics with AI anomaly detection catch failures before they happen | Rust, Tauri, React, CAN |
+| [**TRITON-ML**](https://github.com/ORTODOX1/TRITON-ML) | Time-based maintenance wastes 30-50% of budget. ML predicts actual equipment condition 2-4 weeks before traditional alarms | Python, XGBoost, PyTorch, SHAP |
+| [**SYNIZ**](https://github.com/ORTODOX1/SYNIZ) | IMO 2030/2050 requires radical engineering innovation. 50 TRIZ agents debate contradictions to accelerate R&D cycles | Python, FastAPI, Neo4j, D3.js |
+| [**AEGIS-MONITOR**](https://github.com/ORTODOX1/AEGIS-MONITOR) | Operators monitor 500+ parameters with alarm fatigue. Dashboard with 3D ship model and intelligent alerting reduces response time | React, TypeScript, Three.js |
+| [**NautilusQuant**](https://github.com/ORTODOX1/NautilusQuant) | Satellite bandwidth is 64-512 kbps. 4x deterministic compression enables shipboard AI without cloud dependency | Python, PyTorch, Triton GPU |
 
 ### Ecosystem
 
