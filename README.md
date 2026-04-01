@@ -18,13 +18,11 @@
 
 ### About
 
-In 3 years of ship repair I have seen a turbocharger fail 47 hours after a clean bill of health from time-based maintenance. I have crawled through ballast tanks at 45 degrees looking for coating breakdown that a camera on a rail could find in minutes. I have watched engineers scroll through 300+ alarms per watch because the monitoring system treats a low lube oil pressure and an open deck light as equally urgent.
+Marine engineer with **3+ years** in ship power plant maintenance: main engine overhaul, turbocharger balancing, fuel injector testing, piston ring and scavenge port inspection, auxiliary diesel servicing, planned maintenance system (PMS) execution.
 
-These are solvable problems. I am solving them.
+I build software that solves the problems I encountered hands-on — condition-based maintenance instead of fixed intervals, automated inspection of confined spaces, intelligent alarm prioritization instead of alarm fatigue.
 
-**3+ years** hands-on: main engine overhaul, piston ring inspection, scavenge port condition assessment, turbocharger balancing, fuel injector testing, auxiliary diesel maintenance, planned maintenance system (PMS) execution. I know what a failing bearing sounds like before the vibration sensor catches it.
-
-Now I write the software that catches it first — in **Rust** (CAN bus, J1939, NMEA 2000), **Python** (ML, computer vision, ONNX), and **TypeScript** (monitoring dashboards, 3D visualization).
+**Rust** for CAN bus protocols (J1939, NMEA 2000). **Python** for ML, computer vision, edge inference. **TypeScript** for real-time monitoring dashboards.
 
 ### Education
 
