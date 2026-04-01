@@ -14,7 +14,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Experience-3+_Years_Ship_Repair-1b263b?style=flat-square" alt="Experience">
-  <img src="https://img.shields.io/badge/Location-Germany_→_Italy-1b263b?style=flat-square" alt="Location">
+  <img src="https://img.shields.io/badge/Location-Germany-1b263b?style=flat-square" alt="Location">
   <img src="https://img.shields.io/badge/Status-Open_to_Work-2d6a4f?style=flat-square" alt="Status">
 </p>
 
@@ -80,7 +80,9 @@ Dry-dock Operations   ████████░░  Inspection, Repair, Report
 
 ### Education
 
-**Operation of Ship Power Plants**
+**Operation of Ship Power Plants** (4 years)
+Specialist degree in marine power plant operation, maintenance, and diagnostics.
+Core curriculum: thermodynamics, marine diesel engines, steam turbines, auxiliary machinery, ship electrical systems, automation and control systems.
 Moscow State University of Transport (RUT MIIT) | 2017 — 2021
 
 ---
