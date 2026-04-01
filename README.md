@@ -78,8 +78,6 @@ Dry-dock Operations   ████████░░  Inspection, Repair, Report
 | [**TRITON-ML**](https://github.com/ORTODOX1/TRITON-ML) | Predictive maintenance ML pipeline for ship machinery | Python, XGBoost, PyTorch, SHAP |
 | [**AEGIS-MONITOR**](https://github.com/ORTODOX1/AEGIS-MONITOR) | Ship systems monitoring dashboard — real-time visualization | React, TypeScript, Three.js |
 | [**NautilusQuant**](https://github.com/ORTODOX1/NautilusQuant) | Deterministic signal compression via golden ratio geometry | Python, PyTorch, Triton GPU |
-| [**DAEDALUS**](https://github.com/ORTODOX1/DAEDALUS) | AI-assisted ECU diagnostic platform for commercial vehicles | Rust, Tauri, React, Three.js |
-
 ### Ecosystem
 
 ```
