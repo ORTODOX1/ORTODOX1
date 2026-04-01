@@ -18,9 +18,13 @@
 
 ### About
 
-Marine engineer with **3+ years** of hands-on experience in ship power plant maintenance, diesel engine overhaul, and propulsion system diagnostics. I build software tools that connect physical machinery to digital monitoring — combining deep domain knowledge of marine engineering with modern programming (Rust, Python, TypeScript).
+In 3 years of ship repair I have seen a turbocharger fail 47 hours after a clean bill of health from time-based maintenance. I have crawled through ballast tanks at 45 degrees looking for coating breakdown that a camera on a rail could find in minutes. I have watched engineers scroll through 300+ alarms per watch because the monitoring system treats a low lube oil pressure and an open deck light as equally urgent.
 
-Currently transitioning into **marine automation, IIoT, and embedded systems** engineering.
+These are solvable problems. I am solving them.
+
+**3+ years** hands-on: main engine overhaul, piston ring inspection, scavenge port condition assessment, turbocharger balancing, fuel injector testing, auxiliary diesel maintenance, planned maintenance system (PMS) execution. I know what a failing bearing sounds like before the vibration sensor catches it.
+
+Now I write the software that catches it first — in **Rust** (CAN bus, J1939, NMEA 2000), **Python** (ML, computer vision, ONNX), and **TypeScript** (monitoring dashboards, 3D visualization).
 
 ### Education
 
@@ -136,5 +140,5 @@ Each layer solves a distinct problem. Together, they enable autonomous maritime 
 ---
 
 <p align="center">
-  <em>"I know how a ship sounds when something is wrong.<br>Now I write the algorithms that detect it."</em>
+  <em>"Most software engineers have never touched a marine diesel.<br>Most marine engineers have never written a GPU kernel.<br>I do both."</em>
 </p>
