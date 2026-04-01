@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/ORTODOX1/ORTODOX1/blob/output/ship-animation.svg" alt="Ship sailing across contribution graph" width="100%"/>
+</p>
+
 <h1 align="center">
   <br>
   <img src="https://img.shields.io/badge/Marine_Engineer-Automation_&_Embedded_Systems-0d1b2a?style=for-the-badge&labelColor=1b263b" alt="Title">
