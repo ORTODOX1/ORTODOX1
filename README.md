@@ -73,6 +73,13 @@ The robot sees. The ML predicts. TRIZ reasons about the unknown. NautilusQuant f
 | [**SYNIZ**](https://github.com/ORTODOX1/SYNIZ) | 🔄 active | IMO 2030/2050 demands radical engineering. 50 TRIZ agents accelerate R&D cycles. | Python · FastAPI · Neo4j · D3.js |
 | [**AEGIS-MONITOR**](https://github.com/ORTODOX1/AEGIS-MONITOR) | 🔄 active | 500+ parameters → alarm fatigue. 3D ship dashboard with intelligent prioritization. | React · TypeScript · Three.js |
 
+#### Cross-domain / experimental
+
+| Project | Status | Problem it solves | Stack |
+|---------|--------|-------------------|-------|
+| [**arc.computer**](https://github.com/ORTODOX1/arc-computer) | 🆕 alpha | Engineering knowledge that works without internet, cloud or subscription. Offline AI engineer turns scrap electronics into working tools via reverse-BOM solving. | Python 3.13 · FastAPI · LLM adapters · offline knowledge base |
+| [**DAEDALUS**](https://github.com/ORTODOX1/DAEDALUS) | 🔄 active | Same diagnostics expertise extended to commercial vehicles — AI-assisted ECU reading, DTC analysis and map editing. | Rust · React · Tauri · J1939 · CAN |
+
 ---
 
 ### Tech Stack
@@ -156,9 +163,17 @@ Dry-dock Operations   ████████░░  Inspection · Repair · Re
 
 ### Education & Certifications
 
-**Operation of Ship Power Plants** — 4-year program. Thermodynamics · marine diesel engines · steam turbines · auxiliary machinery · ship electrical systems · automation & control.
+**Operation of Ship Power Plants** — 4-year diploma program · graduated **2022**.
+Thermodynamics · marine diesel engines · steam turbines · auxiliary machinery · ship electrical systems · automation & control.
 
 **STCW International**: ISPS · Basic Safety Training (fire prevention, survival, personal safety) · Proficiency in Medical First Aid · Security Awareness Training.
+
+**Languages**:
+<p>
+  <img src="https://img.shields.io/badge/English-Working_proficiency-1b263b?style=flat-square" alt="English">
+  <img src="https://img.shields.io/badge/Deutsch-Working_proficiency-1b263b?style=flat-square" alt="Deutsch">
+  <img src="https://img.shields.io/badge/Русский-Native-1b263b?style=flat-square" alt="Russian">
+</p>
 
 ---
 
