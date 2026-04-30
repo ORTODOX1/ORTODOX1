@@ -18,7 +18,9 @@
 
 ### About
 
-3+ years hands-on in ship power plants — main engines, turbochargers, fuel injection, scavenge spaces, auxiliaries, planned-maintenance-system execution. The kind of detail you only learn with grease on your hands.
+3+ years hands-on in commercial marine power plants — medium-speed and high-speed 4-stroke diesel engines, mechanical fuel-injection systems (Bosch P-pump rebuilds), turbocharger overhaul and dynamic balancing, fuel-injector pressure testing, scavenge-space and piston-ring inspection, auxiliary genset servicing, planned-maintenance-system execution. The kind of detail you only learn with grease on your hands.
+
+Hands-on with both legacy mechanically-governed engines (Bosch P-pump + pneumatic / Woodward governors) and modern ECU-controlled repower projects (Caterpillar ADEM, Cummins CM-series, J1939 telemetry).
 
 Every project I build came from a problem I saw on board. I solve it at the layer where it actually needs to be solved — sometimes Python, sometimes a Rust crate over J1939, sometimes SystemVerilog targeting Skywater 130 nm.
 
@@ -97,16 +99,25 @@ The robot sees. The ML predicts. TRIZ reasons about the unknown. NautilusQuant f
   <img src="https://img.shields.io/badge/ROS_2-22314E?style=flat-square&logo=ros&logoColor=white" alt="ROS 2">
 </p>
 
+**Marine Engine Systems**
+<p>
+  <img src="https://img.shields.io/badge/Medium--speed_marine_diesel-4--stroke-0d1b2a?style=flat-square" alt="Medium-speed">
+  <img src="https://img.shields.io/badge/High--speed_marine_diesel-4--stroke-0d1b2a?style=flat-square" alt="High-speed">
+  <img src="https://img.shields.io/badge/Bosch_P--pump-Mechanical_injection-0d1b2a?style=flat-square" alt="Bosch P-pump">
+  <img src="https://img.shields.io/badge/Woodward-Governor_UG-0d1b2a?style=flat-square" alt="Woodward">
+  <img src="https://img.shields.io/badge/Turbocharger-Overhaul_%26_balancing-0d1b2a?style=flat-square" alt="Turbocharger">
+  <img src="https://img.shields.io/badge/Caterpillar-ADEM_A4-0d1b2a?style=flat-square" alt="Cat ADEM">
+  <img src="https://img.shields.io/badge/Cummins-CM--series_ECU-0d1b2a?style=flat-square" alt="Cummins CM">
+</p>
+
 **Marine Automation & Industrial Protocols**
 <p>
   <img src="https://img.shields.io/badge/J1939--76-Marine_CAN-0d1b2a?style=flat-square" alt="J1939">
   <img src="https://img.shields.io/badge/NMEA_2000-Navigation_Bus-0d1b2a?style=flat-square" alt="NMEA">
-  <img src="https://img.shields.io/badge/Modbus-Industrial-0d1b2a?style=flat-square" alt="Modbus">
+  <img src="https://img.shields.io/badge/Modbus_RTU-Industrial-0d1b2a?style=flat-square" alt="Modbus">
   <img src="https://img.shields.io/badge/OPC_UA-Unified_Architecture-0d1b2a?style=flat-square" alt="OPC UA">
-  <img src="https://img.shields.io/badge/SAE_J1587-Heavy_Marine_Diagnostics-0d1b2a?style=flat-square" alt="SAE J1587">
-  <img src="https://img.shields.io/badge/MTU_MDEC-Marine_ECU-0d1b2a?style=flat-square" alt="MTU MDEC">
-  <img src="https://img.shields.io/badge/Marine_engine_telemetry-0d1b2a?style=flat-square" alt="Marine telemetry">
   <img src="https://img.shields.io/badge/IEC_61131--3-PLC-0d1b2a?style=flat-square" alt="PLC">
+  <img src="https://img.shields.io/badge/Class_society-survey_support-0d1b2a?style=flat-square" alt="Class survey">
 </p>
 
 **Edge & Systems**
