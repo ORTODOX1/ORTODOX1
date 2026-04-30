@@ -11,7 +11,7 @@
 
 <p align="center">
   <strong>Marine engineer building the AI — and now the silicon — that runs in the engine room.</strong><br>
-  <em>From CAN bus to ASIC. From engine overhaul to LLM inference.</em>
+  <em>From engine room to ASIC. From J1939 to LLM inference.</em>
 </p>
 
 ---
@@ -20,12 +20,12 @@
 
 3+ years hands-on in ship power plants — main engines, turbochargers, fuel injection, scavenge spaces, auxiliaries, planned-maintenance-system execution. The kind of detail you only learn with grease on your hands.
 
-Every project I build came from a problem I saw on board. I solve it at the layer where it actually needs to be solved — sometimes Python, sometimes a Rust crate over CAN bus, sometimes SystemVerilog targeting Skywater 130 nm.
+Every project I build came from a problem I saw on board. I solve it at the layer where it actually needs to be solved — sometimes Python, sometimes a Rust crate over J1939, sometimes SystemVerilog targeting Skywater 130 nm.
 
 | Problem on board                                    | What I built                                                                |
 |-----------------------------------------------------|-----------------------------------------------------------------------------|
 | Confined-space inspections cost \$50–100 K, risk lives | **ARGOS** — autonomous inspection robot (edge AI + TRIZ reasoning)           |
-| Unplanned engine failure costs \$50–500 K/day          | **POSEIDON-DIAG** — real-time CAN-bus diagnostics + AI anomaly detection      |
+| Unplanned engine failure costs \$50–500 K/day          | **POSEIDON-DIAG** — real-time J1939 / NMEA 2000 diagnostics + AI anomaly detection |
 | Time-based PMS wastes 30–50 % of maintenance budget   | **TRITON-ML** — RUL prediction 2–4 weeks ahead of classical alarms            |
 | Operators ignore alarms past 500+ params              | **AEGIS-MONITOR** — 3D ship dashboard with intelligent prioritization         |
 | IMO 2030/2050 demands radical engineering R&D         | **SYNIZ** — 50 TRIZ agents debating contradictions to compress R&D cycles     |
@@ -66,7 +66,7 @@ The robot sees. The ML predicts. TRIZ reasons about the unknown. NautilusQuant f
 |---------|--------|-------------------|-------|
 | [**NautilusQuant**](https://github.com/ORTODOX1/NautilusQuant) | 🆕 v0.1.0 · 241 tests · pre-silicon | Satellite uplink 64–512 kbps. Shipboard AI without cloud dependency. Now ships full pre-silicon stack: 21-opcode ISA + RTL + OpenLane MPW config. | Python · PyTorch · Triton · SystemVerilog · Yosys · OpenLane |
 | [**ARGOS**](https://github.com/ORTODOX1/ARGOS) | 🔄 active | Hull and tank inspections cost \$50–100 K and put humans at risk. Edge AI + TRIZ in confined spaces. | Python · Rust · ROS 2 · ONNX |
-| [**POSEIDON-DIAG**](https://github.com/ORTODOX1/POSEIDON-DIAG) | 🔄 active | Unplanned engine failure costs \$50–500 K/day. Real-time CAN diagnostics catch failures early. | Rust · Tauri · React · CAN |
+| [**POSEIDON-DIAG**](https://github.com/ORTODOX1/POSEIDON-DIAG) | 🔄 active | Unplanned engine failure costs \$50–500 K/day. Real-time J1939 / NMEA 2000 diagnostics catch failures early. | Rust · Tauri · React · J1939 |
 | [**TRITON-ML**](https://github.com/ORTODOX1/TRITON-ML) | 🔄 active | Time-based PMS wastes 30–50 % budget. ML predicts true equipment condition 2–4 weeks ahead. | Python · XGBoost · PyTorch · SHAP |
 | [**SYNIZ**](https://github.com/ORTODOX1/SYNIZ) | 🔄 active | IMO 2030/2050 demands radical engineering. 50 TRIZ agents accelerate R&D cycles. | Python · FastAPI · Neo4j · D3.js |
 | [**AEGIS-MONITOR**](https://github.com/ORTODOX1/AEGIS-MONITOR) | 🔄 active | 500+ parameters → alarm fatigue. 3D ship dashboard with intelligent prioritization. | React · TypeScript · Three.js |
@@ -103,8 +103,9 @@ The robot sees. The ML predicts. TRIZ reasons about the unknown. NautilusQuant f
   <img src="https://img.shields.io/badge/NMEA_2000-Navigation_Bus-0d1b2a?style=flat-square" alt="NMEA">
   <img src="https://img.shields.io/badge/Modbus-Industrial-0d1b2a?style=flat-square" alt="Modbus">
   <img src="https://img.shields.io/badge/OPC_UA-Unified_Architecture-0d1b2a?style=flat-square" alt="OPC UA">
-  <img src="https://img.shields.io/badge/CAN_Bus-Controller_Area_Network-0d1b2a?style=flat-square" alt="CAN">
-  <img src="https://img.shields.io/badge/K--Line-ISO_9141-0d1b2a?style=flat-square" alt="K-Line">
+  <img src="https://img.shields.io/badge/SAE_J1587-Heavy_Marine_Diagnostics-0d1b2a?style=flat-square" alt="SAE J1587">
+  <img src="https://img.shields.io/badge/MTU_MDEC-Marine_ECU-0d1b2a?style=flat-square" alt="MTU MDEC">
+  <img src="https://img.shields.io/badge/Marine_engine_telemetry-0d1b2a?style=flat-square" alt="Marine telemetry">
   <img src="https://img.shields.io/badge/IEC_61131--3-PLC-0d1b2a?style=flat-square" alt="PLC">
 </p>
 
