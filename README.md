@@ -3,93 +3,48 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Experience-3+_Years_Ship_Repair-1b263b?style=flat-square" alt="Experience">
+  <img src="https://img.shields.io/badge/Experience-3%2B_years_ship_power_plants-1b263b?style=flat-square" alt="Experience">
   <img src="https://img.shields.io/badge/Location-Germany-1b263b?style=flat-square" alt="Location">
   <img src="https://img.shields.io/badge/Status-Open_to_Work-2d6a4f?style=flat-square" alt="Status">
+  <img src="https://img.shields.io/badge/Latest-NautilusQuant_v0.1.0_pre--silicon-c47700?style=flat-square" alt="Latest">
+</p>
+
+<p align="center">
+  <strong>Marine engineer building the AI — and now the silicon — that runs in the engine room.</strong><br>
+  <em>From CAN bus to ASIC. From engine overhaul to LLM inference.</em>
 </p>
 
 ---
 
 ### About
 
-Marine engineer with **3+ years** in ship power plant maintenance: main engine overhaul, turbocharger balancing, fuel injector testing, piston ring and scavenge port inspection, auxiliary diesel servicing, planned maintenance system (PMS) execution.
+3+ years hands-on in ship power plants — main engines, turbochargers, fuel injection, scavenge spaces, auxiliaries, planned-maintenance-system execution. The kind of detail you only learn with grease on your hands.
 
-I build software that solves the problems I encountered hands-on — condition-based maintenance instead of fixed intervals, automated inspection of confined spaces, intelligent alarm prioritization instead of alarm fatigue.
+Every project I build came from a problem I saw on board. I solve it at the layer where it actually needs to be solved — sometimes Python, sometimes a Rust crate over CAN bus, sometimes SystemVerilog targeting Skywater 130 nm.
 
-**Rust** for CAN bus protocols (J1939, NMEA 2000). **Python** for ML, computer vision, edge inference. **TypeScript** for real-time monitoring dashboards.
-
-### Education
-
-**Operation of Ship Power Plants** (4 years)
-Marine power plant operation, maintenance, and diagnostics.
-Core curriculum: thermodynamics, marine diesel engines, steam turbines, auxiliary machinery, ship electrical systems, automation and control systems.
-
-**STCW International Certifications**
-- ISPS Code — International Ship and Port Facility Security
-- Basic Safety Training (BST) — fire prevention & firefighting, personal survival techniques, personal safety & social responsibilities
-- Proficiency in Medical First Aid
-- Security Awareness Training
+| Problem on board                                    | What I built                                                                |
+|-----------------------------------------------------|-----------------------------------------------------------------------------|
+| Confined-space inspections cost \$50–100 K, risk lives | **ARGOS** — autonomous inspection robot (edge AI + TRIZ reasoning)           |
+| Unplanned engine failure costs \$50–500 K/day          | **POSEIDON-DIAG** — real-time CAN-bus diagnostics + AI anomaly detection      |
+| Time-based PMS wastes 30–50 % of maintenance budget   | **TRITON-ML** — RUL prediction 2–4 weeks ahead of classical alarms            |
+| Operators ignore alarms past 500+ params              | **AEGIS-MONITOR** — 3D ship dashboard with intelligent prioritization         |
+| IMO 2030/2050 demands radical engineering R&D         | **SYNIZ** — 50 TRIZ agents debating contradictions to compress R&D cycles     |
+| Satellite uplink is 64–512 kbps, cloud AI doesn't fit | **NautilusQuant** — 4× deterministic compression + custom ASIC for shipboard inference |
 
 ---
-
-### Domain Knowledge
-
-```
-Ship Power Plants     ██████████  Marine Diesel Engines
-Propulsion Systems    █████████░  Overhaul & Diagnostics
-Auxiliary Machinery   █████████░  Pumps, Compressors, Heat Exchangers
-Engine Control        ████████░░  ECU, Governor, Fuel Injection
-Dry-dock Operations   ████████░░  Inspection, Repair, Reporting
-```
-
-### Maritime Protocols & Automation
-
-<p>
-  <img src="https://img.shields.io/badge/J1939--76-Marine_CAN-0d1b2a?style=flat-square" alt="J1939">
-  <img src="https://img.shields.io/badge/NMEA_2000-Navigation_Bus-0d1b2a?style=flat-square" alt="NMEA">
-  <img src="https://img.shields.io/badge/Modbus-Industrial_Protocol-0d1b2a?style=flat-square" alt="Modbus">
-  <img src="https://img.shields.io/badge/OPC_UA-Unified_Architecture-0d1b2a?style=flat-square" alt="OPC UA">
-  <img src="https://img.shields.io/badge/CAN_Bus-Controller_Area_Network-0d1b2a?style=flat-square" alt="CAN">
-  <img src="https://img.shields.io/badge/K--Line-ISO_9141-0d1b2a?style=flat-square" alt="K-Line">
-  <img src="https://img.shields.io/badge/IEC_61131--3-PLC_Programming-0d1b2a?style=flat-square" alt="PLC">
-</p>
-
-### Software & Tools
-
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch">
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux">
-  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git">
-</p>
-
----
-
-### Projects
-
-| Project | Problem It Solves | Stack |
-|---------|-------------------|-------|
-| [**ARGOS**](https://github.com/ORTODOX1/ARGOS) | Hull and tank inspections cost $50-100K and put humans at risk. ARGOS automates inspection in confined spaces with edge AI and TRIZ reasoning | Python, Rust, ROS 2, ONNX |
-| [**POSEIDON-DIAG**](https://github.com/ORTODOX1/POSEIDON-DIAG) | Unplanned engine failure costs $50K-500K/day. Real-time CAN bus diagnostics with AI anomaly detection catch failures before they happen | Rust, Tauri, React, CAN |
-| [**TRITON-ML**](https://github.com/ORTODOX1/TRITON-ML) | Time-based maintenance wastes 30-50% of budget. ML predicts actual equipment condition 2-4 weeks before traditional alarms | Python, XGBoost, PyTorch, SHAP |
-| [**SYNIZ**](https://github.com/ORTODOX1/SYNIZ) | IMO 2030/2050 requires radical engineering innovation. 50 TRIZ agents debate contradictions to accelerate R&D cycles | Python, FastAPI, Neo4j, D3.js |
-| [**AEGIS-MONITOR**](https://github.com/ORTODOX1/AEGIS-MONITOR) | Operators monitor 500+ parameters with alarm fatigue. Dashboard with 3D ship model and intelligent alerting reduces response time | React, TypeScript, Three.js |
-| [**NautilusQuant**](https://github.com/ORTODOX1/NautilusQuant) | Satellite bandwidth is 64-512 kbps. 4x deterministic compression enables shipboard AI without cloud dependency | Python, PyTorch, Triton GPU |
 
 ### Ecosystem
 
 ```mermaid
 graph TD
-    A["AEGIS-MONITOR<br/><i>Operator Dashboard</i><br/>Live telemetry · 3D model · Alarms"] --> B
+    A["AEGIS-MONITOR<br/><i>Operator Dashboard</i><br/>Live telemetry · 3D model · Alerts"] --> B
     B["ARGOS<br/><i>Inspection Robot</i><br/>Vision · Navigation · Edge AI"] --> C
     B --> D
     B --> E
-    C["SYNIZ<br/><i>TRIZ Engine</i><br/>50 agents solve<br/>the unknown"]
+    C["SYNIZ<br/><i>TRIZ Engine</i><br/>50 agents reason<br/>about the unknown"]
     D["TRITON-ML<br/><i>Predictive Maintenance</i><br/>Fault detection + RUL"]
-    E["POSEIDON-DIAG<br/><i>Ship Interface</i><br/>J1939 · NMEA · CAN"]
-    D --> F["NautilusQuant<br/><i>Edge Compression</i><br/>3-bit · 512-byte LUT"]
+    E["POSEIDON-DIAG<br/><i>Ship Interface</i><br/>J1939 · NMEA 2000 · CAN"]
+    D --> F["NautilusQuant<br/><i>Edge Compression + Custom ASIC</i><br/>21-opcode ISA · 1.5 KB LUT<br/>RTL · Yosys · OpenLane MPW path"]
 
     style A fill:#0d4a6b,stroke:#1e88a8,color:#e2e8f0
     style B fill:#6b2d0d,stroke:#a8571e,color:#e2e8f0
@@ -99,21 +54,121 @@ graph TD
     style F fill:#6b5a0d,stroke:#a8901e,color:#e2e8f0
 ```
 
-The robot sees. The ML classifies. TRIZ reasons about the unknown. The human makes the final call.
+The robot sees. The ML predicts. TRIZ reasons about the unknown. NautilusQuant fits inference into the satellite pipe — and now into custom silicon. The human makes the final call.
 
 **[Read the full engineering vision: from fundamental physics to autonomous systems →](VISION.md)**
 
 ---
 
-### Target Roles
+### Projects
 
+| Project | Status | Problem it solves | Stack |
+|---------|--------|-------------------|-------|
+| [**NautilusQuant**](https://github.com/ORTODOX1/NautilusQuant) | 🆕 v0.1.0 · 241 tests · pre-silicon | Satellite uplink 64–512 kbps. Shipboard AI without cloud dependency. Now ships full pre-silicon stack: 21-opcode ISA + RTL + OpenLane MPW config. | Python · PyTorch · Triton · SystemVerilog · Yosys · OpenLane |
+| [**ARGOS**](https://github.com/ORTODOX1/ARGOS) | 🔄 active | Hull and tank inspections cost \$50–100 K and put humans at risk. Edge AI + TRIZ in confined spaces. | Python · Rust · ROS 2 · ONNX |
+| [**POSEIDON-DIAG**](https://github.com/ORTODOX1/POSEIDON-DIAG) | 🔄 active | Unplanned engine failure costs \$50–500 K/day. Real-time CAN diagnostics catch failures early. | Rust · Tauri · React · CAN |
+| [**TRITON-ML**](https://github.com/ORTODOX1/TRITON-ML) | 🔄 active | Time-based PMS wastes 30–50 % budget. ML predicts true equipment condition 2–4 weeks ahead. | Python · XGBoost · PyTorch · SHAP |
+| [**SYNIZ**](https://github.com/ORTODOX1/SYNIZ) | 🔄 active | IMO 2030/2050 demands radical engineering. 50 TRIZ agents accelerate R&D cycles. | Python · FastAPI · Neo4j · D3.js |
+| [**AEGIS-MONITOR**](https://github.com/ORTODOX1/AEGIS-MONITOR) | 🔄 active | 500+ parameters → alarm fatigue. 3D ship dashboard with intelligent prioritization. | React · TypeScript · Three.js |
+
+---
+
+### Tech Stack
+
+**Hardware & Silicon**
+<p>
+  <img src="https://img.shields.io/badge/SystemVerilog-1f6feb?style=flat-square" alt="SystemVerilog">
+  <img src="https://img.shields.io/badge/Verilator-FF6B35?style=flat-square" alt="Verilator">
+  <img src="https://img.shields.io/badge/Yosys-2D5F2D?style=flat-square" alt="Yosys">
+  <img src="https://img.shields.io/badge/OpenLane2-1b263b?style=flat-square" alt="OpenLane2">
+  <img src="https://img.shields.io/badge/SymbiYosys-formal-4a0d6b?style=flat-square" alt="SymbiYosys">
+  <img src="https://img.shields.io/badge/Skywater_130nm-PDK-c47700?style=flat-square" alt="Skywater PDK">
+  <img src="https://img.shields.io/badge/RTL_to_GDS-1f6feb?style=flat-square" alt="RTL-to-GDS">
+</p>
+
+**ML / AI / Robotics**
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch">
+  <img src="https://img.shields.io/badge/Triton-GPU_kernels-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="Triton">
+  <img src="https://img.shields.io/badge/ONNX-005CED?style=flat-square&logo=onnx&logoColor=white" alt="ONNX">
+  <img src="https://img.shields.io/badge/XGBoost-1f8b4c?style=flat-square" alt="XGBoost">
+  <img src="https://img.shields.io/badge/SHAP-explainability-4a0d6b?style=flat-square" alt="SHAP">
+  <img src="https://img.shields.io/badge/ROS_2-22314E?style=flat-square&logo=ros&logoColor=white" alt="ROS 2">
+</p>
+
+**Marine Automation & Industrial Protocols**
+<p>
+  <img src="https://img.shields.io/badge/J1939--76-Marine_CAN-0d1b2a?style=flat-square" alt="J1939">
+  <img src="https://img.shields.io/badge/NMEA_2000-Navigation_Bus-0d1b2a?style=flat-square" alt="NMEA">
+  <img src="https://img.shields.io/badge/Modbus-Industrial-0d1b2a?style=flat-square" alt="Modbus">
+  <img src="https://img.shields.io/badge/OPC_UA-Unified_Architecture-0d1b2a?style=flat-square" alt="OPC UA">
+  <img src="https://img.shields.io/badge/CAN_Bus-Controller_Area_Network-0d1b2a?style=flat-square" alt="CAN">
+  <img src="https://img.shields.io/badge/K--Line-ISO_9141-0d1b2a?style=flat-square" alt="K-Line">
+  <img src="https://img.shields.io/badge/IEC_61131--3-PLC-0d1b2a?style=flat-square" alt="PLC">
+</p>
+
+**Edge & Systems**
+<p>
+  <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust">
+  <img src="https://img.shields.io/badge/Tauri-FFC131?style=flat-square&logo=tauri&logoColor=black" alt="Tauri">
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux">
+  <img src="https://img.shields.io/badge/Jetson-edge_GPU-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="Jetson">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git">
+</p>
+
+**Web & Visualization**
+<p>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React">
+  <img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=three.js&logoColor=white" alt="Three.js">
+  <img src="https://img.shields.io/badge/D3.js-F9A03C?style=flat-square&logo=d3.js&logoColor=white" alt="D3">
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
+  <img src="https://img.shields.io/badge/Neo4j-008CC1?style=flat-square&logo=neo4j&logoColor=white" alt="Neo4j">
+</p>
+
+---
+
+### Domain Knowledge
+
+```
+Ship Power Plants     ██████████  Marine Diesel Engines
+Propulsion Systems    █████████░  Overhaul & Diagnostics
+Auxiliary Machinery   █████████░  Pumps · Compressors · Heat Exchangers
+Engine Control        ████████░░  ECU · Governor · Fuel Injection
+Dry-dock Operations   ████████░░  Inspection · Repair · Reporting
+```
+
+---
+
+### Education & Certifications
+
+**Operation of Ship Power Plants** — 4-year program. Thermodynamics · marine diesel engines · steam turbines · auxiliary machinery · ship electrical systems · automation & control.
+
+**STCW International**: ISPS · Basic Safety Training (fire prevention, survival, personal safety) · Proficiency in Medical First Aid · Security Awareness Training.
+
+---
+
+### Open to
+
+**Maritime / Marine Automation**
 - Marine Automation Engineer
 - Vessel Performance / Condition Monitoring Engineer
 - Embedded Systems Engineer (Maritime)
 - Naval Systems Integration Engineer
 
+**Hardware / ML systems** *(marine-domain expertise as differentiator)*
+- Hardware/Software Co-design Engineer
+- FPGA / ASIC Engineer (LLM inference acceleration)
+- ML Inference Optimization Engineer
+- Pre-silicon Verification Engineer
+
 ---
 
 <p align="center">
-  <em>"Most software engineers have never touched a marine diesel.<br>Most marine engineers have never written a GPU kernel.<br>I do both."</em>
+  <em>"Most software engineers have never touched a marine diesel.<br>
+  Most marine engineers have never written a GPU kernel.<br>
+  Most GPU engineers have never designed the silicon underneath.<br>
+  Three layers. One engineer."</em>
 </p>
