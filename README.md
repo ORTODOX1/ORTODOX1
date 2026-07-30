@@ -66,19 +66,19 @@ The robot sees. The ML predicts. TRIZ reasons about the unknown. NautilusQuant f
 
 | Project | Status | Problem it solves | Stack |
 |---------|--------|-------------------|-------|
-| [**NautilusQuant**](https://github.com/ORTODOX1/NautilusQuant) | 🆕 v0.1.0 · 241 tests · pre-silicon | Satellite uplink 64–512 kbps. Shipboard AI without cloud dependency. Now ships full pre-silicon stack: 21-opcode ISA + RTL + OpenLane MPW config. | Python · PyTorch · Triton · SystemVerilog · Yosys · OpenLane |
-| [**ARGOS**](https://github.com/ORTODOX1/ARGOS) | 🔄 active | Hull and tank inspections cost \$50–100 K and put humans at risk. Edge AI + TRIZ in confined spaces. | Python · Rust · ROS 2 · ONNX |
-| [**POSEIDON-DIAG**](https://github.com/ORTODOX1/POSEIDON-DIAG) | 🔄 active | Unplanned engine failure costs \$50–500 K/day. Real-time J1939 / NMEA 2000 diagnostics catch failures early. | Rust · Tauri · React · J1939 |
-| [**TRITON-ML**](https://github.com/ORTODOX1/TRITON-ML) | 🔄 active | Time-based PMS wastes 30–50 % budget. ML predicts true equipment condition 2–4 weeks ahead. | Python · XGBoost · PyTorch · SHAP |
-| [**SYNIZ**](https://github.com/ORTODOX1/SYNIZ) | 🔄 active | IMO 2030/2050 demands radical engineering. 50 TRIZ agents accelerate R&D cycles. | Python · FastAPI · Neo4j · D3.js |
-| [**AEGIS-MONITOR**](https://github.com/ORTODOX1/AEGIS-MONITOR) | 🔄 active | 500+ parameters → alarm fatigue. 3D ship dashboard with intelligent prioritization. | React · TypeScript · Three.js |
+| [**NautilusQuant**](https://github.com/hermandoronin/NautilusQuant) | 🆕 v0.1.0 · 241 tests · pre-silicon | Satellite uplink 64–512 kbps. Shipboard AI without cloud dependency. Now ships full pre-silicon stack: 21-opcode ISA + RTL + OpenLane MPW config. | Python · PyTorch · Triton · SystemVerilog · Yosys · OpenLane |
+| [**ARGOS**](https://github.com/hermandoronin/ARGOS) | 🔄 active | Hull and tank inspections cost \$50–100 K and put humans at risk. Edge AI + TRIZ in confined spaces. | Python · Rust · ROS 2 · ONNX |
+| [**POSEIDON-DIAG**](https://github.com/hermandoronin/POSEIDON-DIAG) | 🔄 active | Unplanned engine failure costs \$50–500 K/day. Real-time J1939 / NMEA 2000 diagnostics catch failures early. | Rust · Tauri · React · J1939 |
+| [**TRITON-ML**](https://github.com/hermandoronin/TRITON-ML) | 🔄 active | Time-based PMS wastes 30–50 % budget. ML predicts true equipment condition 2–4 weeks ahead. | Python · XGBoost · PyTorch · SHAP |
+| [**SYNIZ**](https://github.com/hermandoronin/SYNIZ) | 🔄 active | IMO 2030/2050 demands radical engineering. 50 TRIZ agents accelerate R&D cycles. | Python · FastAPI · Neo4j · D3.js |
+| [**AEGIS-MONITOR**](https://github.com/hermandoronin/AEGIS-MONITOR) | 🔄 active | 500+ parameters → alarm fatigue. 3D ship dashboard with intelligent prioritization. | React · TypeScript · Three.js |
 
 #### Cross-domain / experimental
 
 | Project | Status | Problem it solves | Stack |
 |---------|--------|-------------------|-------|
-| [**arc.computer**](https://github.com/ORTODOX1/arc-computer) | 🆕 alpha | Engineering knowledge that works without internet, cloud or subscription. Offline AI engineer turns scrap electronics into working tools via reverse-BOM solving. | Python 3.13 · FastAPI · LLM adapters · offline knowledge base |
-| [**DAEDALUS**](https://github.com/ORTODOX1/DAEDALUS) | 🔄 active | Same diagnostics expertise extended to commercial vehicles — AI-assisted ECU reading, DTC analysis and map editing. | Rust · React · Tauri · J1939 · CAN |
+| [**arc.computer**](https://github.com/hermandoronin/arc-computer) | 🆕 alpha | Engineering knowledge that works without internet, cloud or subscription. Offline AI engineer turns scrap electronics into working tools via reverse-BOM solving. | Python 3.13 · FastAPI · LLM adapters · offline knowledge base |
+| [**DAEDALUS**](https://github.com/hermandoronin/DAEDALUS) | 🔄 active | Same diagnostics expertise extended to commercial vehicles — AI-assisted ECU reading, DTC analysis and map editing. | Rust · React · Tauri · J1939 · CAN |
 
 ---
 

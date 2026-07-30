@@ -352,7 +352,7 @@ def generate_svg(grid):
     parts.append(
         f'<text x="{WIDTH - 20}" y="{HEIGHT - 15}" '
         f'fill="#484f58" font-size="10" font-family="system-ui,sans-serif" '
-        f'text-anchor="end" font-style="italic">github.com/ORTODOX1</text>'
+        f'text-anchor="end" font-style="italic">github.com/hermandoronin</text>'
     )
     parts.append("</svg>")
 
@@ -360,7 +360,7 @@ def generate_svg(grid):
 
 
 def main():
-    username = "ORTODOX1"
+    username = "hermandoronin"
     token = os.environ.get("GITHUB_TOKEN", "")
 
     if token:
