@@ -58,7 +58,7 @@ graph TD
 
 The robot sees. The ML predicts. TRIZ reasons about the unknown. NautilusQuant fits inference into the satellite pipe — and now into custom silicon. The human makes the final call.
 
-**[Read the full engineering vision: from fundamental physics to autonomous systems →](VISION.md)**
+**[Read the full engineering vision: from protocol layer to autonomous systems →](VISION.md)**
 
 ---
 
