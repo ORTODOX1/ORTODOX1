@@ -26,12 +26,12 @@ Every project I build came from a problem I saw on board. I solve it at the laye
 
 | Problem on board                                    | What I built                                                                |
 |-----------------------------------------------------|-----------------------------------------------------------------------------|
-| Confined-space inspections cost \$50–100 K, risk lives | **ARGOS** — autonomous inspection robot (edge AI + TRIZ reasoning)           |
-| Unplanned engine failure costs \$50–500 K/day          | **POSEIDON-DIAG** — real-time J1939 / NMEA 2000 diagnostics + AI anomaly detection |
-| Time-based PMS wastes 30–50 % of maintenance budget   | **TRITON-ML** — RUL prediction 2–4 weeks ahead of classical alarms            |
+| Confined-space inspections are expensive and risk lives | **ARGOS** — autonomous inspection robot (edge AI + TRIZ reasoning)           |
+| Unplanned engine failure stops the ship                | **POSEIDON-DIAG** — real-time J1939 / NMEA 2000 diagnostics + AI anomaly detection |
+| Time-based PMS replaces parts that are still healthy  | **TRITON-ML** — RUL prediction 2–4 weeks ahead of classical alarms            |
 | Operators ignore alarms past 500+ params              | **AEGIS-MONITOR** — 3D ship dashboard with intelligent prioritization         |
 | IMO 2030/2050 demands radical engineering R&D         | **SYNIZ** — 50 TRIZ agents debating contradictions to compress R&D cycles     |
-| Satellite uplink is 64–512 kbps, cloud AI doesn't fit | **NautilusQuant** — 4× deterministic compression + custom ASIC for shipboard inference |
+| Satellite uplink is 64–512 kbps, cloud AI doesn't fit | **NautilusQuant** — deterministic KV-cache compression, ROM-LUT instead of a stored matrix |
 
 ---
 
@@ -46,7 +46,7 @@ graph TD
     C["SYNIZ<br/><i>TRIZ Engine</i><br/>50 agents reason<br/>about the unknown"]
     D["TRITON-ML<br/><i>Predictive Maintenance</i><br/>Fault detection + RUL"]
     E["POSEIDON-DIAG<br/><i>Ship Interface</i><br/>J1939 · NMEA 2000 · CAN"]
-    D --> F["NautilusQuant<br/><i>Edge Compression + Custom ASIC</i><br/>21-opcode ISA · 1.5 KB LUT<br/>RTL · Yosys · OpenLane MPW path"]
+    D --> F["NautilusQuant<br/><i>Edge Compression + Custom ASIC</i><br/>24-opcode ISA · 1.9 KB LUT<br/>RTL skeleton · Yosys · OpenLane MPW path"]
 
     style A fill:#0d4a6b,stroke:#1e88a8,color:#e2e8f0
     style B fill:#6b2d0d,stroke:#a8571e,color:#e2e8f0
@@ -66,19 +66,18 @@ The robot sees. The ML predicts. TRIZ reasons about the unknown. NautilusQuant f
 
 | Project | Status | Problem it solves | Stack |
 |---------|--------|-------------------|-------|
-| [**NautilusQuant**](https://github.com/hermandoronin/NautilusQuant) | 🆕 v0.1.0 · 241 tests · pre-silicon | Satellite uplink 64–512 kbps. Shipboard AI without cloud dependency. Now ships full pre-silicon stack: 21-opcode ISA + RTL + OpenLane MPW config. | Python · PyTorch · Triton · SystemVerilog · Yosys · OpenLane |
-| [**ARGOS**](https://github.com/hermandoronin/ARGOS) | 🔄 active | Hull and tank inspections cost \$50–100 K and put humans at risk. Edge AI + TRIZ in confined spaces. | Python · Rust · ROS 2 · ONNX |
-| [**POSEIDON-DIAG**](https://github.com/hermandoronin/POSEIDON-DIAG) | 🔄 active | Unplanned engine failure costs \$50–500 K/day. Real-time J1939 / NMEA 2000 diagnostics catch failures early. | Rust · Tauri · React · J1939 |
-| [**TRITON-ML**](https://github.com/hermandoronin/TRITON-ML) | 🔄 active | Time-based PMS wastes 30–50 % budget. ML predicts true equipment condition 2–4 weeks ahead. | Python · XGBoost · PyTorch · SHAP |
-| [**SYNIZ**](https://github.com/hermandoronin/SYNIZ) | 🔄 active | IMO 2030/2050 demands radical engineering. 50 TRIZ agents accelerate R&D cycles. | Python · FastAPI · Neo4j · D3.js |
-| [**AEGIS-MONITOR**](https://github.com/hermandoronin/AEGIS-MONITOR) | 🔄 active | 500+ parameters → alarm fatigue. 3D ship dashboard with intelligent prioritization. | React · TypeScript · Three.js |
+| [**NautilusQuant**](https://github.com/hermandoronin/NautilusQuant) | 🧪 research · v0.1.0 · 247 tests | Satellite uplink 64–512 kbps — shipboard AI without cloud dependency. 1.9 KB ROM-LUT instead of a stored rotation matrix; 24-opcode ISA and an RTL skeleton on the OpenLane path. Benchmarks incl. the negative result are in the repo. | Python · PyTorch · Triton · SystemVerilog · Yosys · OpenLane |
+| [**ARGOS**](https://github.com/hermandoronin/ARGOS) | 🧪 prototype | Hull and tank inspections are expensive and put humans at risk. Edge AI + TRIZ reasoning for confined spaces. | Python · ONNX · OpenCV · CAN |
+| [**POSEIDON-DIAG**](https://github.com/hermandoronin/POSEIDON-DIAG) | 🔄 active | Unplanned engine failure is the most expensive event at sea. J1939 / NMEA 2000 decoding as a Rust workspace — protocol layer works, tests green. | Rust · J1939-71 · NMEA 2000 · SocketCAN |
+| [**TRITON-ML**](https://github.com/hermandoronin/TRITON-ML) | 🔄 active | Time-based maintenance replaces parts that are still healthy. ML on vibration/thermal/operational features estimates true condition instead. | Python · XGBoost · PyTorch · SHAP · ONNX |
+| [**SYNIZ**](https://github.com/hermandoronin/SYNIZ) | 🧪 prototype | IMO 2030/2050 demands radical engineering. A swarm of TRIZ agents debates contradictions instead of one model guessing. Interface and prompts are Russian for now. | Python · FastAPI · Neo4j · React |
+| [**AEGIS-MONITOR**](https://github.com/hermandoronin/AEGIS-MONITOR) | 🔄 active | 500+ parameters cause alarm fatigue. 3D ship dashboard with prioritised alarms; runs on a mock data server. | React 19 · TypeScript · Three.js · Vite |
 
 #### Cross-domain / experimental
 
 | Project | Status | Problem it solves | Stack |
 |---------|--------|-------------------|-------|
-| [**arc.computer**](https://github.com/hermandoronin/arc-computer) | 🆕 alpha | Engineering knowledge that works without internet, cloud or subscription. Offline AI engineer turns scrap electronics into working tools via reverse-BOM solving. | Python 3.13 · FastAPI · LLM adapters · offline knowledge base |
-| [**DAEDALUS**](https://github.com/hermandoronin/DAEDALUS) | 🔄 active | Same diagnostics expertise extended to commercial vehicles — AI-assisted ECU reading, DTC analysis and map editing. | Rust · React · Tauri · J1939 · CAN |
+| [**arc-computer**](https://github.com/hermandoronin/arc-computer) | 🧪 experiment | Engineering knowledge that works without internet or subscription. This repo publishes the knowledge-base pipeline only. | Python · offline knowledge base |
 
 ---
 
@@ -103,7 +102,6 @@ The robot sees. The ML predicts. TRIZ reasons about the unknown. NautilusQuant f
   <img src="https://img.shields.io/badge/ONNX-005CED?style=flat-square&logo=onnx&logoColor=white" alt="ONNX">
   <img src="https://img.shields.io/badge/XGBoost-1f8b4c?style=flat-square" alt="XGBoost">
   <img src="https://img.shields.io/badge/SHAP-explainability-4a0d6b?style=flat-square" alt="SHAP">
-  <img src="https://img.shields.io/badge/ROS_2-22314E?style=flat-square&logo=ros&logoColor=white" alt="ROS 2">
 </p>
 
 **Marine Engine Systems**
@@ -119,7 +117,7 @@ The robot sees. The ML predicts. TRIZ reasons about the unknown. NautilusQuant f
 
 **Marine Automation & Industrial Protocols**
 <p>
-  <img src="https://img.shields.io/badge/J1939--76-Marine_CAN-0d1b2a?style=flat-square" alt="J1939">
+  <img src="https://img.shields.io/badge/J1939--71-Marine_CAN-0d1b2a?style=flat-square" alt="J1939">
   <img src="https://img.shields.io/badge/NMEA_2000-Navigation_Bus-0d1b2a?style=flat-square" alt="NMEA">
   <img src="https://img.shields.io/badge/Modbus_RTU-Industrial-0d1b2a?style=flat-square" alt="Modbus">
   <img src="https://img.shields.io/badge/OPC_UA-Unified_Architecture-0d1b2a?style=flat-square" alt="OPC UA">
@@ -130,7 +128,6 @@ The robot sees. The ML predicts. TRIZ reasons about the unknown. NautilusQuant f
 **Edge & Systems**
 <p>
   <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust">
-  <img src="https://img.shields.io/badge/Tauri-FFC131?style=flat-square&logo=tauri&logoColor=black" alt="Tauri">
   <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux">
   <img src="https://img.shields.io/badge/Jetson-edge_GPU-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="Jetson">
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">

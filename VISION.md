@@ -6,32 +6,18 @@ Modern computing rests on semiconductor physics formalized over 70 years ago. Tr
 
 Meanwhile, the tasks we need computing for have changed fundamentally. Autonomous systems operating in harsh environments — underwater inspection robots, shipboard edge inference, real-time sensor fusion on vessels with 500+ data channels — demand processors that are fast, power-efficient, radiation-tolerant, and physically small. Current silicon cannot satisfy all four simultaneously.
 
-The conventional response is to wait for the next lithography node. I believe the correct response is to revisit the physics.
-
-## The Thesis
-
-The physical models underlying modern electronics — from classical electrodynamics to semiconductor band theory — have been refined incrementally but rarely challenged at the foundational level. Coulomb's law (1785), Maxwell's equations (1865), and the quantum mechanical framework (1920s) form the bedrock. These models work extraordinarily well for the phenomena they were designed to describe. But there is growing experimental evidence — from screening energy anomalies in condensed matter to unexplained material-dependent variations in nuclear interactions — suggesting that the models may be incomplete in regimes relevant to next-generation computing substrates.
-
-If the Coulomb barrier is not a universal constant but a material-dependent, engineerable property (as preliminary data from seven independent laboratories suggests), then entirely new classes of energy-dense computational substrates become theoretically accessible. Processors built on such substrates would not face the electron-tunneling bottleneck because they would not rely on electron transport as the primary computational mechanism.
-
-This is speculative. It is also testable, and that is what matters.
+Waiting for the next lithography node is not a plan. The lever available today is co-design: shrink what the model has to move and store, and shape the algorithm around the hardware that will actually run it.
 
 ## The Stack I Am Building
 
 Each project in my ecosystem addresses a different layer of this vision, from fundamental research to deployable systems:
 
 ```
-Layer 0: PHYSICS
-    └── alternative-physik
-        ML analysis of screening energy data from 7 labs
-        Testing whether the Coulomb barrier is engineerable
-        If yes → new computational substrates become possible
-
 Layer 1: COMPRESSION & ALGORITHMS
     └── NautilusQuant
         Deterministic signal compression using golden ratio geometry
         Designed for static dataflow architectures (Groq, Cerebras, TPU)
-        512-byte LUT fits in any register file — ready for novel processors
+        1.9 KB ROM-LUT instead of a stored rotation matrix
         Key insight: algorithms must be co-designed with hardware,
         not retrofitted onto it
 
@@ -82,18 +68,11 @@ This is why SYNIZ exists alongside TRITON-ML. Statistical pattern matching (ML) 
 
 ## The Horizon
 
-The immediate path is clear: deploy compressed ML models on shipboard edge hardware, automate routine inspection with robots, and give engineers better tools for decision-making. This is achievable with current technology and is the focus of ARGOS, POSEIDON-DIAG, TRITON-ML, and AEGIS-MONITOR.
+The immediate path is clear and needs no breakthrough: deploy compressed models on shipboard edge hardware, automate routine inspection with robots, and give engineers better decision tools. That is the focus of ARGOS, POSEIDON-DIAG, TRITON-ML and AEGIS-MONITOR.
 
-The longer path depends on whether fundamental physics yields new computational substrates. If the screening energy anomalies are real and reproducible, the implications extend far beyond maritime:
+The research layer is honest about its own results. NautilusQuant asked whether golden-ratio geometry beats random rotations for KV-cache quantization; measured on its own benchmark, it does not — the accuracy is slightly worse. What survives is the engineering argument: a 1.9 KB deterministic look-up table replaces a stored rotation matrix, which is what matters when inference has to run on a device the size of a coin instead of in a data centre. A negative result recorded in the repository is worth more than a claim nobody can check.
 
-- Processors operating at energy densities orders of magnitude beyond silicon
-- Real-time inference that today requires a data center, running on a device the size of a coin
-- Autonomous systems with genuine millisecond-scale decision loops, not the hundreds-of-milliseconds latency imposed by current architectures
-- Liberation of human cognitive capacity from repetitive monitoring tasks, freeing engineers to focus on design, innovation, and the problems that actually require human judgment
-
-I do not know if this path will succeed. But I know that the experimental data deserves rigorous investigation, and that the engineering stack required to exploit such breakthroughs must be designed in advance — not after the physics is proven, but alongside it.
-
-That is what these projects represent: a complete engineering stack, from fundamental physics to autonomous robots, built by someone who has worked at every layer and understands how they connect.
+That is what these projects represent: an engineering stack from protocol layer to autonomous system, built by someone who has worked in the engine room and can explain every layer he publishes.
 
 ---
 
